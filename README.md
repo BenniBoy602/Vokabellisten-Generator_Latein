@@ -1,6 +1,6 @@
 # Vokabellisten-Generator_Latein
 
-Ein Python-Projekt, das Daten aus einem öffentlich zugänglichen Wörterbuch (via API) interpretiert und in eine Vokabelliste exportiert. Es wird ein Algorithmus verwendet, um relevante Daten zu extrahieren, zu verarbeiten und in einem benutzerfreundlichen Format (z. B. Excel) bereitzustellen.
+Ein Python-Projekt, das Daten aus einem öffentlich zugänglichen Wörterbuch (Navigium.de) interpretiert und in eine Vokabelliste exportiert. Es wird ein Algorithmus verwendet, um relevante Daten zu extrahieren, zu verarbeiten und in einem benutzerfreundlichen Format (z. B. Excel) bereitzustellen.
 
 ## Überblick
 
