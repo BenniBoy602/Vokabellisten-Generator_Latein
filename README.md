@@ -1,6 +1,6 @@
 # Vokabellisten-Generator_Latein
 
-Ein Python-Projekt, das Daten aus einem öffentlich zugänglichen Wörterbuch (Navigium.de) interpretiert und in eine Vokabelliste exportiert. Es wird ein Algorithmus verwendet, um relevante Daten zu extrahieren, zu verarbeiten und in einem benutzerfreundlichen Format (z. B. Excel) bereitzustellen.
+Ein Python-Projekt, das alle Wörter des eingegebenen Textes in einem öffentlich zugänglichen Wörterbuch (Navigium.de) recherchiert, anschließend interpretiert und in eine Vokabelliste im Excel-Format exportiert.
 
 ## Überblick
 
@@ -32,15 +32,22 @@ pip install -r requirements.txt
 
 ### 1. Projekt ausführen
 
-Das Hauptskript des Projekts heißt `app.py`. Du kannst es direkt mit der `py`-App ausführen, um die Vokabelliste zu generieren.
+Das Hauptskript des Projekts heißt `app.py`. Du kannst es direkt mit dem `py`-Befehl ausführen, um das Gradio-Interface zu starten.
 
 ```bash
 py app.py
 ```
 
-Wenn `py` korrekt installiert ist, wird das Skript gestartet und due kannst es benutzerfreundlich im Browser über Gradio nutzen.
+Wenn `py` korrekt installiert ist, wird das Skript gestartet und due kannst es benutzerfreundlich im Browser via Gradio nutzen.
 
 ### 2. Vokabelliste nutzen
+Sobald du den Befehl ausgeführt hast, gibt die konsole dir den Link den du lokal im Browser öffnen kannst.
+Dies sollte ca. so ausehen:
+```bash
+Running on local URL:  http://127.0.0.1:7860
+
+To create a public link, set `share=True` in `launch()`.
+```
 #### Standart-Funktion
 In dem Gradio Interface kannst du einfach den text einfügen und auf Absenden klicken.
 Rechts findest du dann deine Datei als Download.
