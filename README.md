@@ -48,7 +48,7 @@ Running on local URL:  http://127.0.0.1:7860
 
 To create a public link, set `share=True` in `launch()`.
 ```
-#### Standart-Funktion
+#### Standard-Funktion
 In dem Gradio Interface kannst du einfach den text einfügen und auf Absenden klicken.
 Rechts findest du dann deine Datei als Download.
 
