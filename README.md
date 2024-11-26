@@ -42,7 +42,12 @@ Wenn `py` korrekt installiert ist, wird das Skript gestartet und due kannst es b
 
 ### 2. Vokabelliste nutzen
 
-Von dem Gradio Interface kannst du dir einfach die Vokabelliste herunterladen.
+In dem Gradio Interface kannst du einfach den text einfügen und auf Absenden klicken.
+Rechts findest du dann deine Datei als Download.
+Optional:
+- Export nach Brainyoo(Lernsoftware für Vokabeln): muss im Desktop Browser als Datei importiert werden.
+- Einstellungen der Anzahl an Therads (nur für fortgeschrittene User), kann bei der Geschwindigkeit einen gravierenden Unterschied machen.
+![alt text](https://github.com/BenniBoy602/Vokabellisten-Generator_Latein/blob/main/images/Interface.png "Interface Vorschau")
 
 ## Lizenz
 
