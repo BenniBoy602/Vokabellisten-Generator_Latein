@@ -18,8 +18,8 @@ Dieses Projekt nutzt eine externe API, um Wörter und deren Definitionen aus ein
 1. Das Repository klonen:
 
 ```bash
-git clone https://github.com/dein-username/vokabellisten-generator.git
-cd vokabellisten-generator
+https://github.com/BenniBoy602/Vokabellisten-Generator_Latein.git
+cd Vokabellisten-Generator_Latein
 ```
 
 2. Alle Abhängigkeiten installieren:
