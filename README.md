@@ -1,6 +1,7 @@
 # Vokabellisten-Generator_Latein
 
 Ein Python-Projekt, das alle Wörter des eingegebenen Textes in einem öffentlich zugänglichen Wörterbuch (Navigium.de) recherchiert, anschließend interpretiert und in eine Vokabelliste im Excel-Format exportiert.
+[![Demo auf Hugging Face](https://img.shields.io/badge/🚀-Demo%20ausprobieren-blue)](https://huggingface.co/spaces/Rostbraten/Vokabellisten-Generator)
 
 ## Überblick
 
