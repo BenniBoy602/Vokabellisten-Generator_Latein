@@ -1,5 +1,4 @@
 import requests
-from bs4 import BeautifulSoup
 import re
 import json
 import pandas as pd
@@ -12,8 +11,8 @@ import locale
 from termcolor import colored
 from openpyxl.styles import Font
 
-locale.setlocale(locale.LC_ALL, 'de_DE.UTF-8')
 locale.setlocale(locale.LC_ALL, 'C')
+
 def dice(scriptio, verbum, iudicatum="good"):
     if iudicatum == "good":
         color = "green"
