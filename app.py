@@ -52,14 +52,14 @@ def main(input, filename="Vokabelliste.xlsx", export2by=False, anzahl_threads=20
     return [filepath_excel]
 
 # Erstelle das Gradio Blocks Interface
-with gr.Blocks() as demo:
+with gr.Blocks(css="footer{display:none !important}") as demo:
     # Tabs für die Alternative zwischen Texteingabe und Datei-Upload
-    gr.Markdown("<h1 style='text-align: center;'>Vokabellisten Generator</h1>")
-    gr.Markdown("<p style='text-align: center;'>Einfach aus lateinischen Texten Vokabellisten generieren</p>")
-    gr.Markdown("<p style='text-align: center; color: red;'>!!!Achtung!!! Dies ist eine Beta-Version und unterstützt aktuell nur Nomen, Verben und Adjektive</p>")
+    gr.HTML("<h1 style='text-align: center;'>Vokabellisten Generator</h1>")
+    gr.HTML("<p style='text-align: center;'>Einfach aus lateinischen Texten Vokabellisten generieren</p>")
+    gr.HTML("<p style='text-align: center; color: red;'>!!!Achtung!!! Dies ist eine Beta-Version und unterstützt aktuell nur Nomen, Verben und Adjektive</p>")
     with gr.Tabs():
         with gr.TabItem("Texteingabe"):
-            gr.Markdown("<p style='text-align: left;'>Gib deinen lateinischen Text ein und lade dir anschließend die generierte Excel-Datei und optional auch die Brainyoo-Datei herunter.</p>")
+            gr.HTML("<p style='text-align: left;'>Gib deinen lateinischen Text ein und lade dir anschließend die generierte Excel-Datei und optional auch die Brainyoo-Datei herunter.</p>")
             with gr.Row():
                 with gr.Column():
                     name = gr.Textbox(placeholder="Gib den gewünschten Dateiname hier ein (Default: \"Vokabelliste.xlsx\")...", label="Dateiname(optional):", lines=1, max_lines=1)
@@ -73,7 +73,7 @@ with gr.Blocks() as demo:
                     submit_btn.click(fn=main, inputs=[textbox, name, export2by2, slider], outputs=result_box)
         
         with gr.TabItem("Datei-Upload (.docx)"):
-            gr.Markdown("<p style='text-align: left;'>Lade eine Word-Datei hoch und lade dir anschließend die generierte Excel-Datei und optional auch die Brainyoo-Datei herunter.</p>")
+            gr.HTML("<p style='text-align: left;'>Lade eine Word-Datei hoch und lade dir anschließend die generierte Excel-Datei und optional auch die Brainyoo-Datei herunter.</p>")
             with gr.Row():
                 with gr.Column():
                     name = gr.Textbox(placeholder="Gib den gewünschten Dateiname hier ein (Default: Dateiname der Word-Datei)...", label="Dateiname(optional):", lines=1, max_lines=1)
@@ -86,9 +86,13 @@ with gr.Blocks() as demo:
                     result_box = gr.Files(label="Download Excel-Datei und ggf. deine Brainyoo-Datei")
                     submit_btn.click(fn=main, inputs=[docx_file, name, export2by2, slider], outputs=result_box)
     #gr.Markdown("<hr>")
-    gr.Markdown("<p style='text-align: center;'>Programmiert von: Rostbraten</p>")
+    gr.HTML(f"<a href='https://brainyoo.de/dokumentation/xml-die-browser-version/der-xml-reimport/'> Brainyoo Datei-Import Anleitung</a>")
+    gr.HTML(f"<a href='https://github.com/BenniBoy602/Vokabellisten-Generator_Latein'> GitHub</a>")
+    gr.HTML("<hr>")
+    gr.HTML("<p style='text-align: center;'>Programmiert von: <a href='https://github.com/BenniBoy602'> Rostbraten</a></p>")
     link = "https://www.navigium.de/suchfunktion/_search?q={}"
-    gr.Markdown(f"<p style='text-align: center;'>Nutzt \"{link}\" als Wörterbuch</p>")
+    gr.HTML(f"<p style='text-align: center;'>Nutzt <a href={link}> {link}</a> als Wörterbuch</p>")
+
 
 # Starte die Gradio App
 demo.launch()
